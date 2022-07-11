@@ -117,16 +117,21 @@ form > .selectLog > div{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: rgb(240, 240, 240);
+    width: 70%;
 }
 .apresentacao > div > h2{
     color: white;
     font-size: 2rem;
     font-family: 'Gentium Book Plus', serif;
+    width: 70%;
 }
 .apresentacao > div{
     margin: 20px;
 }
 .text-apresentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 40%;
 }
 /* Sessão de promoções */
@@ -456,5 +461,12 @@ footer a:hover{
     }
     #fotos img{
         width: 33.333333%;
+    }
+}
+@media(max-width: 1080px){
+    .text-apresentacao{
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 }
