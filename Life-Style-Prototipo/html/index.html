@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +21,7 @@
         href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:wght@700&family=Yellowtail&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <!-- Cabeçalho/Barra de navegação -->
     <header>
@@ -28,37 +30,34 @@
                 <a href="#"><img class="logo" src="../assets/logo/life-logo.png" alt="Logo Life Style"></a>
             </div>
             <div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="sobre.html">SOBRE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="promocoes.html">PROMOÇÕES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="destino.html">DESTINO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="contato.html">CONTATO</a>
-                        </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="sobre.html">SOBRE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="promocoes.html">PROMOÇÕES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="destino.html">DESTINO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contato.html">CONTATO</a>
+                            </li>
+                        </ul>
                     </ul>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!-- main com todas as seções -->
     <main>
@@ -66,50 +65,60 @@
         <section class="apresentacao">
             <div class="text-apresentacao">
                 <h1>Agência de viagens Lyfe Style</h1>
-                <br><br>
+                <br>
                 <p>Somos a Life Style, a agência de viagens que se adequa a seu estilo de vida.
                     Por isso temos mais de 50 coberturas e assistências com preços acessíveis!</p>
-                <br>
                 <h2>Não importa o destino que você escolha,
                     nós estaremos com você.</h2>
             </div>
             <form>
-                <div class="selectLog">
-                    <div>
-                        <label>Qual seu destino:</label>
-                        <select class="form-select" id="destino" aria-label="Default select example" required>
-                            <option selected>Selecione seu destino</option>
-                            <option value="1">Brasil</option>
-                            <option value="2">América Latina (inclui México)</option>
-                            <option value="3">Europa</option>
-                            <option value="4">Ásia</option>
-                            <option value="5">África</option>
-                            <option value="6">Oceania</option>
-                            <option value="7">Múltiplos destinos</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="selectLog">
-                    <div>
+                <div class="conteudo">
+                    <div class="selectLog">
+                        <div>
+                            <label class="item-1" style="margin-top: 50px;">Qual seu destino:</label>
+                            <select class="form-select items" id="destino" aria-label="Default select example" required>
+                                <option selected>Selecione seu destino</option>
+                                <option value="1">Brasil</option>
+                                <option value="2">América Latina (inclui México)</option>
+                                <option value="3">Europa</option>
+                                <option value="4">Ásia</option>
+                                <option value="5">África</option>
+                                <option value="6">Oceania</option>
+                                <option value="7">Múltiplos destinos</option>
+                            </select>
+                        </div>
 
-                        <label>Data da Viagem:</label>
-                        <input type="date" class="data" id="data-inicio" required>
+                        <div>
+                            <label class="item-1">Data de partida:</label>
+                            <input type="date" class="data items" id="data-inicio" required>
+                        </div>
+                        <div>
+                            <label class="item-1">Data de retorno:</label>
+                            <input type="date" class="data items" id="data-inicio" required>
+                        </div>
+                        <div>
+                            <label class="item-1">Quantas pessoas:</label>
+                            <input type="number" class="form-control items" id="validationCustom01" required>
+                        </div>
                     </div>
-                    <div>
-                        <label>Email:</label>
-                        <input type="email" class="form-control" id="validationCustom01" required>
-                    </div>
-                </div>
-                <div class="selectLog">
-                    <div><label>Quantas pessoas:</label>
-                        <input type="number" class="form-control" id="validationCustom01" required>
-                    </div>
-                    <div><label>Telefone:</label>
-                        <input type="tel" class="form-control" id="validationCustom01" required>
+                    <div class="selectLog">
+                        <div>
+                            <label class="item-1" id="nome">Nome:</label>
+                            <input type="text" class="form-control items" id="validationCustom01" required>
+                        </div>
+                        <div>
+                            <label class="item-1">CPF:</label>
+                            <input type="text" class="form-control items" id="validationCustom01" required>
+                        </div>
+                        <div>
+                            <label class="item-1">Email:</label>
+                            <input type="email" class="form-control items" id="validationCustom01" required>
+                        </div>
+
+                        <div>
+                            <label class="item-1">Telefone:</label>
+                            <input type="tel" class="form-control items" id="validationCustom01" required>
+                        </div>
                     </div>
                 </div>
                 <div class="bt">
@@ -141,8 +150,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -162,8 +170,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -182,8 +189,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -202,8 +208,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -222,8 +227,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -242,8 +246,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -262,8 +265,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -282,8 +284,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <a class="btn btn-light" id="botao-promo"
-                            href="promocoes.html" role="button">fazer
+                        <a class="btn btn-light" id="botao-promo" href="promocoes.html" role="button">fazer
                             cotação</a>
                     </div>
                 </div>
@@ -294,7 +295,7 @@
             <div class="caixaDeTexto">
                 <h1>Sua satisfação é nosso maior <br> compromisso...</h1>
                 <br>
-                <p>Seu estilo combina mais com praia, campo ou montanha? Independente da geografia do local,<br> a gente
+                <p>Seu estilo combina mais com praia, campo ou montanha? Independente da geografia do local, a gente
                     quer te ajudar a curtir sua viagem com tudo que você tem direito, a começar da
                     tranquilidade. Life Style a sua agência de viagens, converse com a gente e vamos criar juntos um
                     roteiro maravilhoso e que seja a sua cara, no destino e no custo. Explore viagens, viajar é
@@ -473,4 +474,5 @@
         </div>
     </footer>
 </body>
+
 </html>
